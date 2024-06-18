@@ -5,7 +5,6 @@ import { FaWhatsapp } from 'react-icons/fa'
 import './navbar.css'
 import logo from '../../assets/logo_finish.png'
 import vinedo from '../../assets/viñedo.jpg'
-import vinedoGrande from '../../assets/vinedo_grande.jpg'
 
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -38,10 +37,9 @@ export const Navbar = () => {
                         </nav>
                     </div>
                 </div>
-                <img className='header-image' src={ vinedoGrande } alt="vinedo" />
             </header>
             <div className='whats-container'>
-                    <a href='https://wa.me/+573007730741' target='_blank'><FaWhatsapp className='whats' /></a>
+                    <a href='https://wa.me/+573507687999' target='_blank'><FaWhatsapp className='whats' /></a>
             </div>
         </>
     )  

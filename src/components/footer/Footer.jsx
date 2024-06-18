@@ -21,7 +21,7 @@ export const Footer = () => {
                             <h3 className='title-footer'>Síguenos</h3>
                             <div className='social-footer'>
                                 <a href='https://www.facebook.com/martinberdugo/?locale=es_LA' target='_blank'><FaFacebook className='items-footer' /></a>
-                                <a href='https://www.instagram.com/martin_berdugo_bodega/?hl=es' target='_blank'><FaInstagram className='items-footer' /></a>
+                                <a href='https://www.instagram.com/eil_licores_?igsh=aW01aXlyMzlpejky' target='_blank'><FaInstagram className='items-footer' /></a>
                                 <a href='https://www.youtube.com/@martinberdugo297' target='_blank'><FaYoutube className='items-footer' /></a>
                             </div>
                         </div>

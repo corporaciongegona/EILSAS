@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import './about.css'
 import makers from '../../assets/Makers.jpg'
 import pairing from '../../assets/Pairing.jpg'
 
 export const About = () => {
+    useEffect(() => {
+        document.title = "Acerca de"
+    }, [])
+
     return (
         <>
             <section className='container-about'>
@@ -44,18 +48,15 @@ export const About = () => {
                             Quienes somos
                         </h1>
                         <p className='info-about'>
-                        Somos una empresa dedica a la venta y
-                        comercialización de licores importados,
-                        innovando con nuevas marcas en el mercado;
-                        nuestro plus es la diferenciación de productos
-                        que tienen una rotación atractiva para el consumidor
-                        por su alta calidad y precio, permitiendo disminuir
-                        los costos de producción.<br /><br />
-
-                        nuestro portafolio nos permite ofrecerles productos
-                        de Brasil, España, Mexico e India.
-                        Nuestra oficina principal está ubicada en zona franca Bogota
-                        con sucursales en Cartagena, Santa Marta, Bogota, Neiva.
+                        Somos una empresa apasionada por ofrecer a nuestros clientes una experiencia 
+                        única a través de una cuidadosa selección de vinos y destilados importados. 
+                        Constantemente buscamos innovar en el mercado con nuevas y emocionantes marcas.
+                        <br /> 
+                        Nos enorgullece diferenciarnos por la calidad excepcional y precios atractivos 
+                        de nuestros productos, lo cual no solo deleita a nuestros clientes, sino que 
+                        también nos permite mantener costos de producción bajos para el canal Horeca y eventos. 
+                        <br />
+                        ¡Descubre nuestra selección y déjate conquistar por la excelencia en cada producto!
                         </p>
                     </div>
                 </article>

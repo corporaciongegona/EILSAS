@@ -34,7 +34,7 @@
 
 .form-group input, textarea {
     padding: 20px;
-    border: 1px solid #FF5C78;
+    border: 1px solid #5f386c;
     border-radius: 10px;
 }
 
@@ -43,7 +43,7 @@
     border-radius: 6px;
     padding: 20px;
     color: white;
-    background-color: #FF5C78;
+    background-color: #5f386c;
 }
 
 .create-form {
@@ -81,7 +81,7 @@
     border: none;
     border-radius: 10px;
     color: white;
-    background-color: #FF5C78;
+    background-color: #5f386c;
     padding: 12px;
 }
 

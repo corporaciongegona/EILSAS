@@ -3,18 +3,20 @@ body, html {
     padding: 0px;
 }
 
+.player-container {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    background-color: black;
+}
+
 .section-home {
     background-color: black;
-    height: 500px;
+    height: 250px;
     margin: 0;
 }
 
-.logo-home {
-    margin: 20px;
-}
-
 .home-logo {
-    width: 300px;
+    width: 250px;
 }
 
 .section-home {
@@ -86,7 +88,18 @@ body, html {
 }
 
 .slider-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.image-slider{
     width: 200px;
+    margin: 30px;
+    border-radius: 8px;
 }
 
 @media (max-width: 750px) {

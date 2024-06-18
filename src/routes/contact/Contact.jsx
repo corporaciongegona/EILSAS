@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import { FaWhatsapp } from 'react-icons/fa'
+import vinedoGrande from '../../assets/vinedo_grande.jpg'
 
 import './contact.css'
 
@@ -10,8 +11,14 @@ export const Contact = () => {
 
         alert('Has enviado el correo con exito')
     }
+
+    useEffect(() => {
+        document.title = "Contacto"
+    }, [])
+
     return (
         <>
+            <img className='header-image' src={ vinedoGrande } alt="vinedo" />
             <div className='contact-container'>
                 <div className='form-contact'>
                     <form onSubmit={handleSubmit} className='form-for-contact'>
@@ -34,7 +41,7 @@ export const Contact = () => {
                 </div>
                 <div className='wpp'>
                     <h4>Escríbenos</h4>
-                    <a href='https://wa.me/+573007730741' target='_blank'><FaWhatsapp className='wpp-item' /></a> 
+                    <a href='https://wa.me/+573507687999' target='_blank'><FaWhatsapp className='wpp-item' /></a> 
                 </div>
             </div>
         </>

@@ -28,12 +28,12 @@
 .form-group-contact input, textarea {
     margin: 10px;
     padding: 20px;
-    border: 1px solid #FF5C78;
+    border: 1px solid #5f386c;
     border-radius: 10px;
 }
 
 .form-group-contact label {
-    color: #252D5F;
+    color: #00499c;
     font-size: 20px;
     font-weight: bold;
 }
@@ -41,17 +41,17 @@
 .btn-contact {
     padding: 20px;
     border: none;
-    background-color: #FF5C78;
+    background-color: #5f386c;
     color: white;
     border-radius: 10px;
 }
 
 .wpp h4 {
     font-weight: bold;
-    color: #252D5F;
+    color: #00499c;
 }
 
 .wpp-item {
     font-size: 80px;
-    color: #FF5C78;
+    color: #5f386c;
 }

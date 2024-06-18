@@ -1,20 +1,45 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import ReactPlayer from 'react-player'
 
 import './home.css'
 import logoWhite from '../../assets/logo_white_alta.png'
 import wines from '../../assets/wines.jpg'
-import bottles from '../../assets/botellas.png'
+import bottles from '../../assets/botellas1.png'
+import vinedoGrande from '../../assets/vinedo_grande.jpg'
 
-import Slider from './Corousel'
+//Import slider
+import one from '../../assets/gp.jpg'
+import two from '../../assets/jamel.jpg'
+import three from '../../assets/pink.jpg'
+import four from '../../assets/vino_berdugo.jpg'
+
+
+//Import video
+import video from '../../assets/videos/premio.mp4'
 
 export const Home = () => {
+
+    useEffect(() => {
+        document.title = "Inicio"
+    }, [])
+
     return (
         <>
+            <img className='header-image' src={ vinedoGrande } alt="vinedo" />
             <div className='section-home'>
                 <div className='logo-home'>
                     <img className='home-logo' src={logoWhite} alt="logo" />
                 </div>
+            </div>
+            <div className='player-container'>
+                    <ReactPlayer 
+                        url={ video }
+                        className='react-player'
+                        muted
+                        playing
+                        loop
+                        width='100%'
+                    />
             </div>
             <div className='player-container'>
                     <ReactPlayer 
@@ -52,7 +77,10 @@ export const Home = () => {
             </div>
             <div className='container-slider'>
                 <div className='slider-wrap'>
-                    <Slider />
+                    <img className='image-slider' src={ one } alt="wine" />
+                    <img className='image-slider' src={ two } alt="wine" />
+                    <img className='image-slider' src={ three } alt="wine" />
+                    <img className='image-slider' src={ four } alt="wine" />
                 </div>
             </div>
         </>
