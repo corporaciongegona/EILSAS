@@ -16,12 +16,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: justify;
     margin: 15px;
 }
 
 .info-about {
     color: gray;
+    width:400px;
 }
 
 .makers {

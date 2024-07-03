@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 
 import { FaWhatsapp } from 'react-icons/fa'
 import vinedoGrande from '../../assets/vinedo_grande.jpg'
+import portadaDos from '../../assets/portadaDos.jpg'
 
 import './contact.css'
 
@@ -18,7 +19,7 @@ export const Contact = () => {
 
     return (
         <>
-            <img className='header-image' src={ vinedoGrande } alt="vinedo" />
+            <img className='header-image' src={ portadaDos } alt="vinedo" />
             <div className='contact-container'>
                 <div className='form-contact'>
                     <form onSubmit={handleSubmit} className='form-for-contact'>

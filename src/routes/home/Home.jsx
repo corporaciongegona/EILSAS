@@ -6,6 +6,7 @@ import logoWhite from '../../assets/logo_white_alta.png'
 import wines from '../../assets/wines.jpg'
 import bottles from '../../assets/botellas1.png'
 import vinedoGrande from '../../assets/vinedo_grande.jpg'
+import portadaUno from '../../assets/portadaUno.jpg'
 
 //Import slider
 import one from '../../assets/gp.jpg'
@@ -25,21 +26,18 @@ export const Home = () => {
 
     return (
         <>
-            <img className='header-image' src={ vinedoGrande } alt="vinedo" />
+            <img className='header-image' src={ portadaUno } alt="vinedo" />
             <div className='section-home'>
                 <div className='logo-home'>
                     <img className='home-logo' src={logoWhite} alt="logo" />
                 </div>
             </div>
-            <div className='player-container'>
-                    <ReactPlayer 
-                        url={ video }
-                        className='react-player'
-                        muted
-                        playing
-                        loop
-                        width='100%'
-                    />
+            <div className='welcome'>
+                <h2>
+                Nuestro portafolio nos permite ofrecerles productos de España, Brasil, 
+                México e India. Nuestra oficina principal está ubicada en Zona Franca Bogotá,
+                con sucursales en Cartagena y próximamente en Medellín.
+                </h2>
             </div>
             <div className='player-container'>
                     <ReactPlayer 

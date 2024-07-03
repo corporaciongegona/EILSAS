@@ -15,6 +15,28 @@ export const About = () => {
 
                 <article className='article-about'>
                     <div className='image-about'>
+                        <img className='makers' src={ pairing } alt="pairing" />
+                    </div>
+                    <div className='description-about'>
+                        <h3 className='title-about'>
+                            Quienes somos
+                        </h3>
+                        <h1 className='title-about'>
+                            EI LOGISTIC SAS 
+                        </h1>
+                        <p className='info-about'>
+                        "Somos una empresa apasionada por ofrecer a nuestros clientes una experiencia 
+                        única a través de una cuidadosa selección de vinos y destilados importados. 
+                        Constantemente buscamos innovar en el mercado con nuevas y emocionantes marcas. 
+                        Nos enorgullece diferenciarnos por la calidad excepcional y precios atractivos 
+                        de nuestros productos, lo cual no solo deleita a nuestros clientes, sino que también 
+                        nos permite mantener costos de producción bajos para el canal Horeca y eventos. 
+                        ¡Descubre nuestra selección y déjate conquistar por la excelencia en cada producto!”
+                        </p>
+                    </div>
+                </article>
+                <article className='article-about'>
+                    <div className='image-about'>
                         <img className='makers' src={ makers } alt="makers" />
                     </div>
                     <div className='description-about'>
@@ -41,22 +63,46 @@ export const About = () => {
                 </article>
                 <article className='article-about'>
                     <div className='image-about'>
-                        <img className='makers' src={ pairing } alt="pairing" />
+                        <img className='makers' src={ makers } alt="makers" />
+                    </div>
+                    <div className='description-about'>
+                        <h3 className='title-about'>
+                            Nuestras marcas:
+                        </h3>
+                        <h1 className='title-about'>
+                            Martín Berdugo – España
+                        </h1>
+                        <p className='info-about'>
+                        Bodega y Viñedos Martín Berdugo, empresa familiar ubicada 
+                        en Roa, España, se dedica a la elaboración de vinos de alta 
+                        calidad en la Ribera del Duero. Fundada en 1990, apuesta por 
+                        un enfoque artesanal y sostenible, utilizando técnicas tradicionales 
+                        y tecnología moderna para obtener vinos elegantes y expresivos que 
+                        reflejan el carácter único del terruño. Sus 87 hectáreas de viñedos 
+                        en Finca Martín Berdugo, a 800 metros de altura, ofrecen suelos aluviales 
+                        ricos que aportan complejidad, equilibrio y elegancia a sus vinos. Martín 
+                        Berdugo invita a descubrir la pasión y el saber hacer en cada copa de sus 
+                        vinos excepcionales.
+                        </p>
+                    </div>
+                </article>
+                <article className='article-about'>
+                    <div className='image-about'>
+                        <img className='makers' src={ makers } alt="makers" />
                     </div>
                     <div className='description-about'>
                         <h1 className='title-about'>
-                            Quienes somos
+                            MISSIATO – Brasil
                         </h1>
                         <p className='info-about'>
-                        Somos una empresa apasionada por ofrecer a nuestros clientes una experiencia 
-                        única a través de una cuidadosa selección de vinos y destilados importados. 
-                        Constantemente buscamos innovar en el mercado con nuevas y emocionantes marcas.
-                        <br /> 
-                        Nos enorgullece diferenciarnos por la calidad excepcional y precios atractivos 
-                        de nuestros productos, lo cual no solo deleita a nuestros clientes, sino que 
-                        también nos permite mantener costos de producción bajos para el canal Horeca y eventos. 
-                        <br />
-                        ¡Descubre nuestra selección y déjate conquistar por la excelencia en cada producto!
+                        Con un enfoque en la excelencia y la innovación, Missiato ha 
+                        logrado establecerse como líder en la industria, destacándose por 
+                        su compromiso con la calidad y la satisfacción del cliente. Nuestro 
+                        equipo de expertos trabaja incansablemente para garantizar que cada 
+                        producto no solo cumpla, sino que supere las expectativas de nuestros 
+                        consumidores. Además, nuestra dedicación a la mejora continua y la adaptación 
+                        a las tendencias y demandas del mercado nos permiten mantenernos a la vanguardia, 
+                        ofreciendo productos que combinan tradición y modernidad.
                         </p>
                     </div>
                 </article>

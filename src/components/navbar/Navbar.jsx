@@ -22,13 +22,13 @@ export const Navbar = () => {
                         <nav className='nav-menu'>
                             <ol className={`menu-items ${ isOpen && 'open' }`}>
                                 <li>
-                                    <NavLink onClick={() => setIsOpen(!isOpen)} className={({ isActive }) => isActive ? 'active' : ''} to='/home'>Inicio</NavLink>
+                                    <NavLink onClick={() => setIsOpen(!isOpen)} className={({ isActive }) => isActive ? 'active' : ''} to='/products'>Productos</NavLink>
                                 </li>
                                 <li>
                                     <NavLink onClick={() => setIsOpen(!isOpen)} to='/about'>Quienes somos</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink onClick={() => setIsOpen(!isOpen)} to='/products'>Productos</NavLink>
+                                    <NavLink onClick={() => setIsOpen(!isOpen)} to='/home'>Mas info</NavLink>
                                 </li>
                                 <li>
                                     <NavLink onClick={() => setIsOpen(!isOpen)} to='/contact'>Contacto</NavLink>
