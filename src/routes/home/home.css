@@ -121,4 +121,9 @@ body, html {
         display: flex;
         flex-direction: column;
     }
+
+    .welcome h2 {
+        width: 300px;
+        text-align: center;
+    }
 }
