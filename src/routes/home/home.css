@@ -11,7 +11,7 @@ body, html {
 
 .section-home {
     background-color: black;
-    height: 160px;
+    height: 100px;
     margin: 0;
 }
 
@@ -32,33 +32,37 @@ body, html {
     justify-content: space-around;
     align-items: center;
     margin: 0;
-    background-color: black;
+    background-color: white;
 }
 
 .description-wine {
+    width: 700px;
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px;
-    height: auto;
+    font-size: 25px;
 }
 
 .wine {
-    width: 400px;
+    width: 700px;
+    margin: 20px;
 }
 
 .title-wine {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 60px;
     padding: 0
 }
 
 .contain-wine {
     margin: 0;
-    padding: 0;
-    color: gray;
+    padding: 60px;
+    color: black;
+    text-align: justify;
 }
 
 .title-products {
@@ -75,7 +79,7 @@ body, html {
 }
 
 .bottle-image {
-    width: 100%;
+    width: 80%;
 }
 
 .container-slider {
@@ -97,7 +101,7 @@ body, html {
 }
 
 .image-slider{
-    width: 200px;
+    width: 400px;
     margin: 30px;
     border-radius: 8px;
 }
@@ -108,15 +112,20 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 30px;
 }
 
 .welcome h2 {
-    width: 600px;
-    text-align: center;
+    width: 500px;
+    text-align: justify;
+    font-size: 20px;
 }
 
-@media (max-width: 750px) {
+.brands-image {
+    width: 100%;
+}
+
+@media (max-width: 1290px) {
     .wines-home {
         display: flex;
         flex-direction: column;
@@ -125,5 +134,20 @@ body, html {
     .welcome h2 {
         width: 300px;
         text-align: center;
+    }
+
+    .wine {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .description-wine {
+        width: 100%;
+        padding: 50px;
+        height: auto;
+    }
+    .title-wine {
+        width: 100%;
+        font-size: 50px;
     }
 }

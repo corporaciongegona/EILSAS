@@ -4,15 +4,20 @@ import ReactPlayer from 'react-player'
 import './home.css'
 import logoWhite from '../../assets/logo_white_alta.png'
 import wines from '../../assets/wines.jpg'
-import bottles from '../../assets/botellas1.png'
+import bottles from '../../assets/pagina_principal.png'
 import vinedoGrande from '../../assets/vinedo_grande.jpg'
 import portadaUno from '../../assets/portadaUno.jpg'
+import vinedoInfo from '../../assets/vinedo_mas_info.jpg'
+import man from '../../assets/hombre.jpg'
+import brands from '../../assets/MARCAS.png'
 
 //Import slider
-import one from '../../assets/gp.jpg'
-import two from '../../assets/jamel.jpg'
-import three from '../../assets/pink.jpg'
-import four from '../../assets/vino_berdugo.jpg'
+import one from '../../assets/vinos_portada/1.jpg'
+import two from '../../assets/vinos_portada/2.jpg'
+import three from '../../assets/vinos_portada/2.jpg'
+import four from '../../assets/vinos_portada/4.jpg'
+import five from '../../assets/vinos_portada/5.jpg'
+import six from '../../assets/vinos_portada/6.jpg'
 
 
 //Import video
@@ -69,6 +74,53 @@ export const Home = () => {
                     </p>
                 </div>
             </div>
+
+
+            <div className='wines-home'>
+                <div className='image-wine'>
+                    <img className='wine' src={vinedoInfo} alt="wines" />
+                </div>
+                <div className='description-wine'>
+                    <h1 className='title-wine'>
+                        El viñedo
+                    </h1>
+                    <p className='contain-wine'>
+                    Nuestras 87 hectáreas de viñedo en un solo pago, situado 
+                    a 800 metros de altura, ofrece la belleza y complejidad 
+                    que sólo los suelos aluviales del valle del río Duero pueden 
+                    aportar: gravas cuarcíticas, arenas, limos y arcillas ligeras, 
+                    dan un carácter especial a nuestros vinos. Nuestras vides maduras, 
+                    que ya alcanzan los 30 años, se encuentran en la edad perfecta para 
+                    extraer los minerales que producen sabores y aromas excepcionales y distintivos.
+                    Ofrecemos una gama de vinos que transmite la esencia de cada una de 
+                    las distintas fincas de nuestro viñedo, historia, familia y la naturaleza que nos rodea.
+
+                    </p>
+                </div>
+            </div>
+
+            <div className='wines-home'>
+                <div className='image-wine'>
+                    <img className='wine' src={man} alt="wines" />
+                </div>
+                <div className='description-wine'>
+                    <h1 className='title-wine'>
+                        El hombre detrás del vino
+                    </h1>
+                    <p className='contain-wine'>
+                    Antonio Díez Martín, un enólogo apasionado, es el miembro de 
+                    la familia responsable de dirigir la operación vitivinícola 
+                    de Martín Berdugo. Su entusiasmo, visión y personalidad impregnan 
+                    cada aspecto del negocio. Tal es su energía y compromiso que es tan 
+                    probable que lo encuentres podando vides como viajando a ferias de vinos 
+                    por todo el mundo.
+
+                    </p>
+                </div>
+            </div>
+
+            
+
             <div className='title-products'>
                 <h2 className='some-products'>Algunos de nuestros productos</h2>
                 <img className='bottle-image' src={bottles} alt="bottles" />
@@ -79,7 +131,12 @@ export const Home = () => {
                     <img className='image-slider' src={ two } alt="wine" />
                     <img className='image-slider' src={ three } alt="wine" />
                     <img className='image-slider' src={ four } alt="wine" />
+                    <img className='image-slider' src={ five } alt="wine" />
+                    <img className='image-slider' src={ six } alt="wine" />
                 </div>
+            </div>
+            <div className='brands'>
+                <img className='brands-image' src={brands} alt="brands" />
             </div>
         </>
     )
