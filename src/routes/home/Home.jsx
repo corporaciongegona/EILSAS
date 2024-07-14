@@ -9,7 +9,6 @@ import vinedoGrande from '../../assets/vinedo_grande.jpg'
 import portadaUno from '../../assets/portadaUno.jpg'
 import vinedoInfo from '../../assets/vinedo_mas_info.jpg'
 import man from '../../assets/hombre.jpg'
-import brands from '../../assets/MARCAS.png'
 
 //Import slider
 import one from '../../assets/vinos_portada/1.jpg'
@@ -32,11 +31,6 @@ export const Home = () => {
     return (
         <>
             <img className='header-image' src={ portadaUno } alt="vinedo" />
-            <div className='section-home'>
-                <div className='logo-home'>
-                    <img className='home-logo' src={logoWhite} alt="logo" />
-                </div>
-            </div>
             <div className='welcome'>
                 <h2>
                 Nuestro portafolio nos permite ofrecerles productos de España, Brasil, 
@@ -134,9 +128,6 @@ export const Home = () => {
                     <img className='image-slider' src={ five } alt="wine" />
                     <img className='image-slider' src={ six } alt="wine" />
                 </div>
-            </div>
-            <div className='brands'>
-                <img className='brands-image' src={brands} alt="brands" />
             </div>
         </>
     )

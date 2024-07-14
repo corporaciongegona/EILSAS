@@ -4,6 +4,14 @@ import './about.css'
 import makers from '../../assets/Makers.jpg'
 import pairing from '../../assets/Pairing.jpg'
 
+//Logos import
+import logoEil from '../../assets/logo_eil_finish.png'
+import logoMartin from '../../assets/logo-martin.png'
+import logoMissiato from '../../assets/logo-missiato.png'
+
+//Brands import
+import brands from '../../assets/MARCAS.png'
+
 export const About = () => {
     useEffect(() => {
         document.title = "Acerca de"
@@ -15,7 +23,7 @@ export const About = () => {
 
                 <article className='article-about'>
                     <div className='image-about'>
-                        <img className='makers' src={ pairing } alt="pairing" />
+                        <img className='makers' src={ logoEil } alt="pairing" />
                     </div>
                     <div className='description-about'>
                         <h3 className='title-about'>
@@ -63,7 +71,7 @@ export const About = () => {
                 </article>
                 <article className='article-about'>
                     <div className='image-about'>
-                        <img className='makers' src={ makers } alt="makers" />
+                        <img className='makers' src={ logoMartin } alt="makers" />
                     </div>
                     <div className='description-about'>
                         <h3 className='title-about'>
@@ -88,7 +96,7 @@ export const About = () => {
                 </article>
                 <article className='article-about'>
                     <div className='image-about'>
-                        <img className='makers' src={ makers } alt="makers" />
+                        <img className='makers' src={ logoMissiato } alt="makers" />
                     </div>
                     <div className='description-about'>
                         <h1 className='title-about'>
@@ -107,6 +115,9 @@ export const About = () => {
                     </div>
                 </article>
             </section>
+            <div className='brands'>
+                <img className='brands-image' src={brands} alt="brands" />
+            </div>
         </>
     )
 }

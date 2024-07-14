@@ -46,6 +46,12 @@
     border-radius: 10px;
 }
 
+.btn-contact:hover {
+    border: 2px solid #5f386c;
+    color: #5f386c;
+    background-color: white;
+}
+
 .wpp h4 {
     font-weight: bold;
     color: #00499c;
