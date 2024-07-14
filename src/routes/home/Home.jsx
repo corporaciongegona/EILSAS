@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import ReactPlayer from 'react-player'
 
 import './home.css'
@@ -23,13 +23,49 @@ import six from '../../assets/vinos_portada/6.jpg'
 import video from '../../assets/videos/premio.mp4'
 
 export const Home = () => {
+    const dialogRef = useRef(null)
+
+    const showPopup = () => {
+        dialogRef.current.showModal()
+        document.body.classList.add('blur');
+    }
+
+    const closePopup = () => {
+        dialogRef.current.close()
+        document.body.classList.remove('blur');
+    }
+
+    const handleKey = (event) => {
+        if (event.key === 'Escape') {
+            closePopup()
+        }
+    }
 
     useEffect(() => {
         document.title = "Inicio"
+         showPopup()
     }, [])
+
+    document.addEventListener('keydown', handleKey)
 
     return (
         <>
+
+        <dialog ref={dialogRef}>
+            <p onClick={closePopup} className='close'>X</p>
+        <div className='player-container'>
+                    <ReactPlayer 
+                        url={video}
+                        className='react-player'
+                        muted
+                        playing
+                        loop
+                        width='100%'
+                    />
+            </div>
+
+        </dialog>
+
             <img className='header-image' src={ portadaUno } alt="vinedo" />
             <div className='welcome'>
                 <h2>

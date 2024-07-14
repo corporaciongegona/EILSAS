@@ -125,6 +125,35 @@ body, html {
     width: 100%;
 }
 
+.blur {
+    filter: blur(5px);
+}
+
+dialog {
+    display: none;
+}
+
+dialog[open] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    background-color: black;
+    border-radius: 12px;
+    width: 400px;
+}
+
+.close {
+    width: 25px;
+    border-radius: 50%;
+    margin: 0px;
+    background-color: #5f386c;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
 @media (max-width: 1290px) {
     .wines-home {
         display: flex;
