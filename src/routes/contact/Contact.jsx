@@ -22,22 +22,22 @@ export const Contact = () => {
             <img className='header-image' src={ portadaDos } alt="vinedo" />
             <div className='contact-container'>
                 <div className='form-contact'>
-                    <form onSubmit={handleSubmit} className='form-for-contact'>
+                    <form onSubmit={handleSubmit} name='contact' method="POST" data-netlify="true"className='form-for-contact'>
                         <div className='form-group-contact'>
                             <label htmlFor="name">Nombre:</label>
-                            <input type="text" name='name' placeholder='Tu nombre...' />
+                            <input type="text" name='name' placeholder='Tu nombre...' required/>
                         </div>
 
                         <div className='form-group-contact'>
                             <label htmlFor="email">Correo:</label>
-                            <input type="email" name='email' placeholder='Tu correo...' />
+                            <input type="email" name='email' placeholder='Tu correo...' required />
                         </div>
 
                         <div className='form-group-contact'>
-                            <label htmlFor="description">Motivo del contacto:</label>
-                            <textarea type="text" name='description' placeholder='Motivo...' />
+                            <label htmlFor="message">Motivo del contacto:</label>
+                            <textarea type="text" name='message' placeholder='Motivo...' required />
                         </div>
-                        <button className='btn-contact'>Enviar</button>
+                        <button type='submit' className='btn-contact'>Enviar</button>
                     </form>
                 </div>
                 <div className='wpp'>

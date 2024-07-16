@@ -1,13 +1,40 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import { FaWhatsapp } from 'react-icons/fa'
 
 import './navbar.css'
 import logo from '../../assets/logo_finish.png'
 import vinedo from '../../assets/viñedo.jpg'
+import logoEil from '../../assets/logo_eil_finish.png'
 
 export const Navbar = () => {
+
+    useEffect(() => {
+        showPopup()
+    }, [])
+
     const [isOpen, setIsOpen] = useState(false)
+
+    const dialogRef = useRef(null)
+
+    const showPopup = () => {
+        dialogRef.current.showModal()
+        document.body.classList.add('blur');
+    }
+
+    const closePopup = () => {
+        dialogRef.current.close()
+        document.body.classList.remove('blur');
+    }
+
+    const handleKey = (event) => {
+        if (event.key === 'Escape') {
+            closePopup()
+        }
+    }
+
+    document.addEventListener('keydown', handleKey)
+
     return (
         <>
             <header className='header'>
@@ -41,6 +68,20 @@ export const Navbar = () => {
             <div className='whats-container'>
                     <a href='https://wa.me/+573507687999' target='_blank'><FaWhatsapp className='whats' /></a>
             </div>
+            <dialog ref={dialogRef}>
+                <div className='main-popup'>
+                    <img className='logoEil' src={logoEil} alt="logo" />    
+                    <h3 className='title-popup'>¿ERES MAYOR DE EDAD?</h3>
+                    <div>
+                        <button onClick={closePopup} className='btn-contact btn-popup'>SI</button>
+                        <button className='btn-contact btn-popup'>NO</button>
+                    </div>
+                    <h6 className='description-popup'>
+                        No admite el consumo excesivo de sus productos, principalmente por personas
+                        menores de 18 años, mujeres embarazadas, o quienes conducen vehiculos.
+                    </h6>
+                </div> 
+            </dialog>
         </>
     )  
 }

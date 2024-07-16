@@ -58,6 +58,26 @@ body, html {
     display: none; 
 }
 
+.main-popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 12px;
+    background-color: white;
+    width: 100%;
+}
+
+.logoEil {
+    width: 100%;
+}
+
+.btn-popup {
+    width: 80px;
+    margin: 10px;
+}
+
 
 @media (max-width: 750px) {
     .nav-menu {
