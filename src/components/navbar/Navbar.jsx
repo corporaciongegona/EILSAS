@@ -65,16 +65,13 @@ export const Navbar = () => {
                     </div>
                 </div>
             </header>
-            <div className='whats-container'>
-                    <a href='https://wa.me/+573507687999' target='_blank'><FaWhatsapp className='whats' /></a>
-            </div>
             <dialog ref={dialogRef}>
                 <div className='main-popup'>
                     <img className='logoEil' src={logoEil} alt="logo" />    
                     <h3 className='title-popup'>¿ERES MAYOR DE EDAD?</h3>
                     <div>
                         <button onClick={closePopup} className='btn-contact btn-popup'>SI</button>
-                        <button className='btn-contact btn-popup'>NO</button>
+                        <button onClick={() => {alert('Debes ser mayor de edad para continuar navegando en nuestra página')}} className='btn-contact btn-popup'>NO</button>
                     </div>
                     <h6 className='description-popup'>
                         No admite el consumo excesivo de sus productos, principalmente por personas

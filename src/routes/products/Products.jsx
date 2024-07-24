@@ -82,7 +82,7 @@ export const Products = () => {
             </div>
 
             <div className='card-section'>
-               <img className='image-card' src={barrica} alt="image-card" />
+               <img className='image-card' src={vinoTres} alt="image-card" />
                <h4 className='title-card'>Vino tinto Barrica 14.3%</h4>
                <p className='description'>Marca: Martin Verdugo, Producto importado de España</p>
                <p className='type'>Disponible en las ciudades: <br /> Bogota y Cartagena <br />*Próximamente Medellin </p>
@@ -90,7 +90,7 @@ export const Products = () => {
             </div>
 
             <div className='card-section'>
-               <img className='image-card' src={crianza} alt="image-card" />
+               <img className='image-card' src={vinoCuatro} alt="image-card" />
                <h4 className='title-card'>Vino tinto crianza 14.82%</h4>
                <p className='description'>Marca: Martin Verdugo, Producto importado de España</p>
                <p className='type'>Disponible en las ciudades: <br /> Bogota y Cartagena <br />*Próximamente Medellin </p>
@@ -98,7 +98,7 @@ export const Products = () => {
             </div>
 
             <div className='card-section'>
-               <img className='image-card' src={reserva} alt="image-card" />
+               <img className='image-card' src={vinoCinco} alt="image-card" />
                <h4 className='title-card'>Vino tinto reserva 14.82%</h4>
                <p className='description'>Marca: Martin Verdugo, Producto importado de España</p>
                <p className='type'>Disponible en las ciudades: <br /> Bogota y Cartagena <br />*Próximamente Medellin </p>
