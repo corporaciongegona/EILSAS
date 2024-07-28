@@ -45,6 +45,31 @@ export const About = () => {
                 </article>
                 <article className='article-about'>
                     <div className='image-about'>
+                        <img className='makers' src={ logoMartin } alt="makers" />
+                    </div>
+                    <div className='description-about'>
+                        <h3 className='title-about'>
+                            Nuestras marcas:
+                        </h3>
+                        <h1 className='title-about'>
+                            Martín Berdugo – España
+                        </h1>
+                        <p className='info-about'>
+                        Bodega y Viñedos Martín Berdugo, empresa familiar ubicada 
+                        en Roa, España, se dedica a la elaboración de vinos de alta 
+                        calidad en la Ribera del Duero. Fundada en 1990, apuesta por 
+                        un enfoque artesanal y sostenible, utilizando técnicas tradicionales 
+                        y tecnología moderna para obtener vinos elegantes y expresivos que 
+                        reflejan el carácter único del terruño. Sus 87 hectáreas de viñedos 
+                        en Finca Martín Berdugo, a 800 metros de altura, ofrecen suelos aluviales 
+                        ricos que aportan complejidad, equilibrio y elegancia a sus vinos. Martín 
+                        Berdugo invita a descubrir la pasión y el saber hacer en cada copa de sus 
+                        vinos excepcionales.
+                        </p>
+                    </div>
+                </article>
+                <article className='article-about'>
+                    <div className='image-about'>
                         <img className='makers' src={ makers } alt="makers" />
                     </div>
                     <div className='description-about'>
@@ -66,31 +91,6 @@ export const About = () => {
                         pago habían tomado forma. Hoy en día, después de 30 años, ha llegado 
                         un momento en el que la edad del viñedo comienza a pagar dividendos 
                         de calidad, según coinciden todos los expertos.
-                        </p>
-                    </div>
-                </article>
-                <article className='article-about'>
-                    <div className='image-about'>
-                        <img className='makers' src={ logoMartin } alt="makers" />
-                    </div>
-                    <div className='description-about'>
-                        <h3 className='title-about'>
-                            Nuestras marcas:
-                        </h3>
-                        <h1 className='title-about'>
-                            Martín Berdugo – España
-                        </h1>
-                        <p className='info-about'>
-                        Bodega y Viñedos Martín Berdugo, empresa familiar ubicada 
-                        en Roa, España, se dedica a la elaboración de vinos de alta 
-                        calidad en la Ribera del Duero. Fundada en 1990, apuesta por 
-                        un enfoque artesanal y sostenible, utilizando técnicas tradicionales 
-                        y tecnología moderna para obtener vinos elegantes y expresivos que 
-                        reflejan el carácter único del terruño. Sus 87 hectáreas de viñedos 
-                        en Finca Martín Berdugo, a 800 metros de altura, ofrecen suelos aluviales 
-                        ricos que aportan complejidad, equilibrio y elegancia a sus vinos. Martín 
-                        Berdugo invita a descubrir la pasión y el saber hacer en cada copa de sus 
-                        vinos excepcionales.
                         </p>
                     </div>
                 </article>

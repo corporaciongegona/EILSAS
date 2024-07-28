@@ -29,6 +29,10 @@
     width: 400px;
 }
 
+.brands {
+    margin-bottom: 30px;
+}
+
 @media (max-width: 768px) {
     .article-about {
         display: flex;

@@ -170,6 +170,7 @@ dialog[open] {
     .wine {
         width: 100%;
         margin: 0px;
+        margin-bottom: 40px;
     }
 
     .description-wine {
