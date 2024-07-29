@@ -8,8 +8,6 @@ import './contact.css'
 
 export const Contact = () => {
     const handleSubmit = (e) => {
-        e.preventDefault()
-
         alert('Has enviado el correo con exito')
     }
 

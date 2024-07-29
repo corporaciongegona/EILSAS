@@ -105,6 +105,7 @@ body, html {
     width: 400px;
     margin: 30px;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .welcome {
@@ -146,6 +147,18 @@ dialog[open] {
     overflow: hidden;
 }
 
+.dialog-dos[open] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    width: 600px;
+    overflow: hidden;
+}
+
 .close {
     width: 25px;
     border-radius: 50%;
@@ -154,6 +167,11 @@ dialog[open] {
     color: white;
     text-align: center;
     cursor: pointer;
+}
+
+.image-popup-dos {
+    width:100%;
+    border-radius: 14px;
 }
 
 @media (max-width: 1290px) {

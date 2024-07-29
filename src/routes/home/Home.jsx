@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import ReactPlayer from 'react-player'
 
 import './home.css'
@@ -13,7 +13,7 @@ import man from '../../assets/hombre.jpg'
 //Import slider
 import one from '../../assets/vinos_portada/1.jpg'
 import two from '../../assets/vinos_portada/2.jpg'
-import three from '../../assets/vinos_portada/2.jpg'
+import three from '../../assets/vinos_portada/3.jpg'
 import four from '../../assets/vinos_portada/4.jpg'
 import five from '../../assets/vinos_portada/5.jpg'
 import six from '../../assets/vinos_portada/6.jpg'
@@ -23,12 +23,20 @@ import six from '../../assets/vinos_portada/6.jpg'
 import video from '../../assets/videos/premio.mp4'
 
 export const Home = () => {
+
+    const [url, setUrl] = useState(null)
     const dialogRef = useRef(null)
+    const dialogRefDos = useRef(null)
 
     const showPopup = () => {
         dialogRef.current.showModal()
         document.body.classList.add('blur');
     }
+
+    useEffect(() => {
+        document.title = "Inicio"
+         showPopup()
+    }, [])
 
     const closePopup = () => {
         dialogRef.current.close()
@@ -41,12 +49,30 @@ export const Home = () => {
         }
     }
 
-    useEffect(() => {
-        document.title = "Inicio"
-         showPopup()
-    }, [])
+    //Funcionalidades popup dos
 
-    document.addEventListener('keydown', handleKey)
+    const showPopupDos = () => {
+        dialogRefDos.current.showModal()
+        document.body.classList.add('blur');
+    }
+
+    const closePopupDos = () => {
+        dialogRefDos.current.close()
+        document.body.classList.remove('blur');
+    }
+
+    const clickPopup = (url) => {
+        setUrl(url)
+        showPopupDos()
+    }
+
+    const handleKeyDos = (event) => {
+        if (event.key === 'Escape') {
+            closePopupDos()
+        }
+    }
+
+    document.addEventListener('keydown', handleKeyDos)
 
     return (
         <>
@@ -155,14 +181,23 @@ export const Home = () => {
                 <h2 className='some-products'>Algunos de nuestros productos</h2>
                 <img className='bottle-image' src={bottles} alt="bottles" />
             </div>
+
+                <dialog className='dialog-dos' ref={dialogRefDos}>
+                <p onClick={closePopupDos} className='close'>X</p>
+            <div className='image-popup'>
+                        <img className='image-popup-dos' src={url} alt="image-popup" />
+                </div>
+
+            </dialog>
+
             <div className='container-slider'>
                 <div className='slider-wrap'>
-                    <img className='image-slider' src={ one } alt="wine" />
-                    <img className='image-slider' src={ two } alt="wine" />
-                    <img className='image-slider' src={ three } alt="wine" />
-                    <img className='image-slider' src={ four } alt="wine" />
-                    <img className='image-slider' src={ five } alt="wine" />
-                    <img className='image-slider' src={ six } alt="wine" />
+                    <img onClick={() => {clickPopup(one)}} className='image-slider' src={ one } alt="wine" />
+                    <img onClick={() => {clickPopup(two)}} className='image-slider' src={ two } alt="wine" />
+                    <img onClick={() => {clickPopup(three)}} className='image-slider' src={ three } alt="wine" />
+                    <img onClick={() => {clickPopup(four)}} className='image-slider' src={ four } alt="wine" />
+                    <img onClick={() => {clickPopup(five)}} className='image-slider' src={ five } alt="wine" />
+                    <img onClick={() => {clickPopup(six)}} className='image-slider' src={ six } alt="wine" />
                 </div>
             </div>
         </>
