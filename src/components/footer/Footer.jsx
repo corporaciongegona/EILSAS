@@ -28,11 +28,11 @@ export const Footer = () => {
                 </div>
                 <div className='footer-info'>
                     <div className='info-items-footer'>
-                        <NavLink to='/home'><p>Inicio</p></NavLink>
+                        <NavLink to='/products'><p>Productos</p></NavLink>
                         <NavLink to='/about'><p>Quienes somos</p></NavLink>
                     </div>
                     <div className='info-items-footer'>
-                    <NavLink to='/products'><p>Productos</p></NavLink>
+                    <NavLink to='/home'><p>mas info</p></NavLink>
                     <NavLink to='/contact'><p>Contacto</p></NavLink>
                     </div>
                     <div className='info-items-footer'>
