@@ -20,7 +20,7 @@ import six from '../../assets/vinos_portada/6.jpg'
 
 
 //Import video
-import video from '../../assets/videos/premio.mp4'
+import video from '../../assets/videos/premios.mp4'
 
 export const Home = () => {
 
