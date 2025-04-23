@@ -21,6 +21,7 @@ import six from '../../assets/vinos_portada/6.jpg'
 
 //Import video
 import video from '../../assets/videos/premios.mp4'
+import videoTwo from '../../assets/videos/Bodega.mp4'
 
 export const Home = () => {
 
@@ -35,7 +36,7 @@ export const Home = () => {
 
     useEffect(() => {
         document.title = "Inicio"
-         showPopup()
+        showPopup()
     }, [])
 
     const closePopup = () => {
@@ -77,10 +78,10 @@ export const Home = () => {
     return (
         <>
 
-        <dialog ref={dialogRef}>
-            <p onClick={closePopup} className='close'>X</p>
-        <div className='player-container'>
-                    <ReactPlayer 
+            <dialog ref={dialogRef}>
+                <p onClick={closePopup} className='close'>X</p>
+                <div className='player-container'>
+                    <ReactPlayer
                         url={video}
                         className='react-player'
                         muted
@@ -88,27 +89,28 @@ export const Home = () => {
                         loop
                         width='100%'
                     />
-            </div>
+                </div>
 
-        </dialog>
+            </dialog>
 
-            <img className='header-image' src={ portadaUno } alt="vinedo" />
+            <img className='header-image' src={portadaUno} alt="vinedo" />
             <div className='welcome'>
                 <h2>
-                Nuestro portafolio nos permite ofrecerles productos de España, Brasil, 
-                México e India. Nuestra oficina principal está ubicada en Zona Franca Bogotá,
-                con sucursales en Cartagena y próximamente en Medellín.
+                    Nuestro portafolio nos permite ofrecerles productos de España, Brasil,
+                    México e India. Nuestra oficina principal está ubicada en Zona Franca Bogotá,
+                    con sucursales en Cartagena y próximamente en Medellín.
                 </h2>
             </div>
             <div className='player-container'>
-                    <ReactPlayer 
-                        url='https://www.youtube.com/watch?v=ZO3JZP6Dbgk&t=19s'
-                        className='react-player'
-                        muted
-                        playing
-                        loop
-                        width='100%'
-                    />
+                <video
+                    className='react-player'
+                    src={videoTwo}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    style={{ width: '100%' }}
+                />
             </div>
             <div className='wines-home'>
                 <div className='image-wine'>
@@ -141,15 +143,15 @@ export const Home = () => {
                         El viñedo
                     </h1>
                     <p className='contain-wine'>
-                    Nuestras 87 hectáreas de viñedo en un solo pago, situado 
-                    a 800 metros de altura, ofrece la belleza y complejidad 
-                    que sólo los suelos aluviales del valle del río Duero pueden 
-                    aportar: gravas cuarcíticas, arenas, limos y arcillas ligeras, 
-                    dan un carácter especial a nuestros vinos. Nuestras vides maduras, 
-                    que ya alcanzan los 30 años, se encuentran en la edad perfecta para 
-                    extraer los minerales que producen sabores y aromas excepcionales y distintivos.
-                    Ofrecemos una gama de vinos que transmite la esencia de cada una de 
-                    las distintas fincas de nuestro viñedo, historia, familia y la naturaleza que nos rodea.
+                        Nuestras 87 hectáreas de viñedo en un solo pago, situado
+                        a 800 metros de altura, ofrece la belleza y complejidad
+                        que sólo los suelos aluviales del valle del río Duero pueden
+                        aportar: gravas cuarcíticas, arenas, limos y arcillas ligeras,
+                        dan un carácter especial a nuestros vinos. Nuestras vides maduras,
+                        que ya alcanzan los 30 años, se encuentran en la edad perfecta para
+                        extraer los minerales que producen sabores y aromas excepcionales y distintivos.
+                        Ofrecemos una gama de vinos que transmite la esencia de cada una de
+                        las distintas fincas de nuestro viñedo, historia, familia y la naturaleza que nos rodea.
 
                     </p>
                 </div>
@@ -164,40 +166,40 @@ export const Home = () => {
                         El hombre detrás del vino
                     </h1>
                     <p className='contain-wine'>
-                    Antonio Díez Martín, un enólogo apasionado, es el miembro de 
-                    la familia responsable de dirigir la operación vitivinícola 
-                    de Martín Berdugo. Su entusiasmo, visión y personalidad impregnan 
-                    cada aspecto del negocio. Tal es su energía y compromiso que es tan 
-                    probable que lo encuentres podando vides como viajando a ferias de vinos 
-                    por todo el mundo.
+                        Antonio Díez Martín, un enólogo apasionado, es el miembro de
+                        la familia responsable de dirigir la operación vitivinícola
+                        de Martín Berdugo. Su entusiasmo, visión y personalidad impregnan
+                        cada aspecto del negocio. Tal es su energía y compromiso que es tan
+                        probable que lo encuentres podando vides como viajando a ferias de vinos
+                        por todo el mundo.
 
                     </p>
                 </div>
             </div>
 
-            
+
 
             <div className='title-products'>
                 <h2 className='some-products'>Algunos de nuestros productos</h2>
                 <img className='bottle-image' src={bottles} alt="bottles" />
             </div>
 
-                <dialog className='dialog-dos' ref={dialogRefDos}>
+            <dialog className='dialog-dos' ref={dialogRefDos}>
                 <p onClick={closePopupDos} className='close'>X</p>
-            <div className='image-popup'>
-                        <img className='image-popup-dos' src={url} alt="image-popup" />
+                <div className='image-popup'>
+                    <img className='image-popup-dos' src={url} alt="image-popup" />
                 </div>
 
             </dialog>
 
             <div className='container-slider'>
                 <div className='slider-wrap'>
-                    <img onClick={() => {clickPopup(one)}} className='image-slider' src={ one } alt="wine" />
-                    <img onClick={() => {clickPopup(two)}} className='image-slider' src={ two } alt="wine" />
-                    <img onClick={() => {clickPopup(three)}} className='image-slider' src={ three } alt="wine" />
-                    <img onClick={() => {clickPopup(four)}} className='image-slider' src={ four } alt="wine" />
-                    <img onClick={() => {clickPopup(five)}} className='image-slider' src={ five } alt="wine" />
-                    <img onClick={() => {clickPopup(six)}} className='image-slider' src={ six } alt="wine" />
+                    <img onClick={() => { clickPopup(one) }} className='image-slider' src={one} alt="wine" />
+                    <img onClick={() => { clickPopup(two) }} className='image-slider' src={two} alt="wine" />
+                    <img onClick={() => { clickPopup(three) }} className='image-slider' src={three} alt="wine" />
+                    <img onClick={() => { clickPopup(four) }} className='image-slider' src={four} alt="wine" />
+                    <img onClick={() => { clickPopup(five) }} className='image-slider' src={five} alt="wine" />
+                    <img onClick={() => { clickPopup(six) }} className='image-slider' src={six} alt="wine" />
                 </div>
             </div>
         </>

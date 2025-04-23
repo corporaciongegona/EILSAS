@@ -52,10 +52,10 @@ export const Navbar = () => {
                                     <NavLink onClick={() => setIsOpen(!isOpen)} className={({ isActive }) => isActive ? 'active' : ''} to='/products'>Productos</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink onClick={() => setIsOpen(!isOpen)} to='/about'>Quienes somos</NavLink>
+                                    <NavLink onClick={() => setIsOpen(!isOpen)} to='/about'>Quienes Somos</NavLink>
                                 </li>
                                 <li>
-                                    <NavLink onClick={() => setIsOpen(!isOpen)} to='/home'>Mas info</NavLink>
+                                    <NavLink onClick={() => setIsOpen(!isOpen)} to='/home'>Más Info</NavLink>
                                 </li>
                                 <li>
                                     <NavLink onClick={() => setIsOpen(!isOpen)} to='/contact'>Contacto</NavLink>

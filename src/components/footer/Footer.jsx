@@ -29,14 +29,14 @@ export const Footer = () => {
                 <div className='footer-info'>
                     <div className='info-items-footer'>
                         <NavLink to='/products'><p>Productos</p></NavLink>
-                        <NavLink to='/about'><p>Quienes somos</p></NavLink>
+                        <NavLink to='/about'><p>Quienes Somos</p></NavLink>
                     </div>
                     <div className='info-items-footer'>
-                    <NavLink to='/home'><p>mas info</p></NavLink>
+                    <NavLink to='/home'><p>Más Info</p></NavLink>
                     <NavLink to='/contact'><p>Contacto</p></NavLink>
                     </div>
                     <div className='info-items-footer'>
-                        <p>&copy; Todos los derechos reservados 2024</p>
+                        <p>&copy; Todos los derechos reservados 2025</p>
                     </div>
                 </div>
             </footer>
